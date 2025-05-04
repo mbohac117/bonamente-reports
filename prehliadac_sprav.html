@@ -1,52 +1,51 @@
-
 <!DOCTYPE html>
 <html lang="sk">
 <head>
     <meta charset="UTF-8">
     <title>Správy z trhu nehnuteľností</title>
     <style>
-        body {{
+        body {
             background-color: #121212;
             color: #f5f5f5;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding: 20px;
-        }}
-        h2 {{
+        }
+        h2 {
             color: #ffffff;
             font-size: 2.2em;
             margin-bottom: 10px;
-        }}
-        select {{
+        }
+        select {
             padding: 6px;
             background-color: #1e1e1e;
             color: #ffffff;
             border: 1px solid #555;
             margin-bottom: 20px;
-        }}
-        ul {{
+        }
+        ul {
             list-style: none;
             padding: 0;
-        }}
-        li {{
+        }
+        li {
             margin-bottom: 14px;
             font-size: 1em;
-        }}
-        a {{
+        }
+        a {
             color: #f7931a; /* bitcoin orange */
             text-decoration: none;
-        }}
-        a:hover {{
+        }
+        a:hover {
             text-decoration: underline;
-        }}
+        }
     </style>
     <script>
-        function filterByDate() {{
+        function filterByDate() {
             var selectedDate = document.getElementById("dateFilter").value;
             var items = document.querySelectorAll("li[data-date]");
-            items.forEach(function(item) {{
+            items.forEach(function(item) {
                 item.style.display = (selectedDate === "" || item.getAttribute("data-date") === selectedDate) ? "list-item" : "none";
-            }});
-        }}
+            });
+        }
     </script>
 </head>
 <body>
